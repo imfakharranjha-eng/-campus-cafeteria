@@ -792,3 +792,123 @@ body {
         grid-column: auto;
     }
 }
+
+/* FEEDBACK PAGE */
+.feedback-hero {
+    background: linear-gradient(135deg, #fff0e5, #ffe0cc);
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.feedback-hero h1 {
+    color: #263238;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.feedback-hero p {
+    color: #59666b;
+    font-size: 16px;
+}
+
+.feedback-section {
+    padding: 65px 20px;
+    background: #f8f9fa;
+}
+
+.feedback-card {
+    max-width: 750px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+}
+
+.feedback-card h2 {
+    color: #263238;
+    margin-bottom: 10px;
+}
+
+.feedback-card > p {
+    color: #718096;
+    margin-bottom: 28px;
+}
+
+.feedback-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.feedback-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.feedback-form .full-width {
+    grid-column: 1 / -1;
+}
+
+.feedback-form label {
+    font-weight: 600;
+    color: #34434a;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce1e5;
+    border-radius: 7px;
+    font: inherit;
+    outline: none;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    border-color: #f07835;
+}
+
+.feedback-form textarea {
+    resize: vertical;
+}
+
+.feedback-btn {
+    grid-column: 1 / -1;
+    padding: 15px;
+    background: #f07835;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.feedback-btn:hover {
+    background: #d96122;
+}
+
+@media (max-width: 600px) {
+    .feedback-form {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback-form .full-width,
+    .feedback-btn {
+        grid-column: auto;
+    }
+
+    .feedback-card {
+        padding: 25px 18px;
+    }
+
+    .feedback-hero h1 {
+        font-size: 29px;
+    }
+}
