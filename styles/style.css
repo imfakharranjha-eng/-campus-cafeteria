@@ -253,3 +253,206 @@ body {
         font-size: 26px;
     }
 }
+
+/* ================================
+   MENU PAGE
+================================ */
+
+.menu-page {
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.menu-hero {
+    background: linear-gradient(135deg, #164e63, #0f766e);
+    color: #ffffff;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.menu-hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.menu-hero p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+.menu-section {
+    padding-top: 65px;
+    padding-bottom: 75px;
+}
+
+.menu-section > h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #164e63;
+    margin-bottom: 12px;
+}
+
+.menu-description {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+.menu-card h3 {
+    color: #164e63;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.menu-card p {
+    color: #64748b;
+    line-height: 1.7;
+    min-height: 80px;
+}
+
+.menu-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.menu-price {
+    color: #0f766e;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.menu-order-btn {
+    display: inline-block;
+    background: #0f766e;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.menu-order-btn:hover {
+    background: #115e59;
+}
+
+/* Responsive Menu */
+
+@media (max-width: 900px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-hero h2 {
+        font-size: 30px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card p {
+        min-height: auto;
+    }
+
+    .menu-card-bottom {
+        flex-wrap: wrap;
+    }
+}
+
+/* =========================================
+   SHARED LAYOUT - HOME AND MENU PAGES
+========================================= */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Menu Page Header */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.main-nav a {
+    color: #45545a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #f07835;
+}
+
+/* Responsive Navigation */
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        justify-content: center;
+        gap: 12px 20px;
+    }
+}
+
+/* Responsive Menu Grid */
+
+@media (max-width: 900px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
