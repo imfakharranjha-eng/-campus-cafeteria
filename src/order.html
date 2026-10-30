@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order | Campus Bites</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">Campus Bites</a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="deals.html">Deals</a>
+            <a href="order.html" class="active">Order</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </div>
+</header>
+
+<main class="order-page">
+
+    <section class="order-hero">
+        <div class="container">
+            <h1>Place Your Order</h1>
+            <p>Fresh food, easy ordering, and a better campus break.</p>
+        </div>
+    </section>
+
+    <section class="order-section container">
+
+        <div class="order-heading">
+            <h2>Order Details</h2>
+            <p>Complete the form below to place your cafeteria order.</p>
+        </div>
+
+        <form class="order-form" action="#" method="post">
+
+            <div class="order-form-grid">
+
+                <div class="form-group">
+                    <label for="customer-name">Full Name</label>
+                    <input type="text" id="customer-name" name="customer-name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-email">Email Address</label>
+                    <input type="email" id="customer-email" name="customer-email"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-phone">Phone Number</label>
+                    <input type="tel" id="customer-phone" name="customer-phone"
+                           placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="food-item">Select Food Item</label>
+                    <select id="food-item" name="food-item" required>
+                        <option value="">Choose an item</option>
+                        <option value="Classic Burger">Classic Burger - Rs. 450</option>
+                        <option value="Chicken Pizza">Chicken Pizza - Rs. 650</option>
+                        <option value="Club Sandwich">Club Sandwich - Rs. 350</option>
+                        <option value="French Fries">French Fries - Rs. 200</option>
+                        <option value="Cold Drink">Cold Drink - Rs. 120</option>
+                        <option value="Chocolate Cake">Chocolate Cake - Rs. 250</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity"
+                           min="1" max="20" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment" required>
+                        <option value="">Select payment method</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Card">Debit/Credit Card</option>
+                        <option value="Digital Wallet">Digital Wallet</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="notes">Additional Instructions</label>
+                    <textarea id="notes" name="notes" rows="4"
+                              placeholder="Any special instructions?"></textarea>
+                </div>
+
+            </div>
+
+            <button type="submit" class="order-submit-btn">Place Order</button>
+
+            <p class="order-note">
+                Please verify your details before submitting your order.
+            </p>
+
+        </form>
+
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 Campus Bites. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
